@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: var(--ff-text)
+}
+
+:root {
+  --ff-text: 'DM Sans', sans-serif;
+  --ff-title: 'Montserrat', sans-serif;
+
+  --bg-page: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  --bg-input: #DCE2E9;
+  --bg-button: #7879F1;
+  --bg-buttonhover: #6060ed;
+
+  --cl-text: #34355B;
+  --cl-textopacity: #34355bcc;
+
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--bg-page);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.page {
+  background: white;
+  width: 42.5rem;
+  min-height: 20rem;
+
+  padding: 4.8rem 6.4rem;
+  border-radius: 6px;
+}
+
+.screen1, .screen2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Screen1 */
+
+.screen1 h1 {
+  font-family: var(--ff-title);
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: var(--cl-text);
+
+  margin-bottom: 1.6rem;
+}
+
+.screen1 p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--cl-textopacity);
+
+  margin-bottom: 4.8rem
+}
+
+form {
+  display: flex;
+}
+
+input, button {
+  display: block;
+  
+  padding: 16px;
+  border: none;
+  
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+}
+
+input {
+  background: var(--bg-input);
+  color: var(--cl-text);
+
+  width: 4.3rem;
+  height: 5.3rem;
+
+  border-radius: 4px 0px 0px 4px;
+}
+
+button {
+  background: var(--bg-button);
+  
+  font-weight: 700;
+  color: white;
+
+  border-radius: 0px 4px 4px 0px;
+}
+
+button:hover {
+  background: var(--bg-buttonhover);
+  cursor: pointer;
+}
+
+/* Screen2 */
+
+.screen2 h2 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--cl-text);
+
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: 4px;
+  margin-bottom: 1.6rem;
+}
+
+/* Important */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.hiden {
+  display: none;
+}
